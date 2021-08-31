@@ -13,6 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.21.1",
+    "moment": "^2.29.1",
     "next": "^11.1.0",
     "prismjs": "^1.24.1",
     "react": "^17.0.2",

@@ -7,6 +7,7 @@
 1. Setup the api of frontend from - [API for Frontend](https://github.com/IIT-BHU-CyberSec/IIT-BHU-CyberSecWeb-FrontEnd-API#readme)
 2. Run `npm i` in root directory
 3. Setup `DEV_API_URL` in `next.config.js` to the URL where the API is running by default it is `http://localhost:5000`
+4. Run `npm run dev`
 
 ### Production
 1. The production website is running at https://iitbhucybersec.netlify.app/

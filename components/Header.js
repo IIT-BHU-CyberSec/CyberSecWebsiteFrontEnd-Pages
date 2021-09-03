@@ -1,35 +1,20 @@
 import React from 'react'
+
 const Navbar = () => {
     return (
-        <div>
-            <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
-                <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-                    data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
-                    aria-label="Toggle navigation">
+        <div className="row">
+            <nav className="col navbar navbar-expand-lg navbar-light bg-transparent montserrat-800">
+                <a className="navbar-brand" href="#">IIT(BHU)CyberSec</a>
+                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
-                <a className="navbar-brand" href="/">IIT(BHU)CyberSec</a>
-
-                <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
-                    <ul className="navbar-nav mr-auto mt-2 mt-md-0">
-                        <li className="nav-item active">
-                            <a className="nav-link" href="/">Home
-                                <span className="sr-only">(current)</span>
-                            </a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href='/about'>About Us</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="/blog">Blogs</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="/contact">Contact Us</a>
-                        </li>
-                    </ul>
-                    <form className="form-inline my-2 my-lg-0">
-                        <input className="form-control mr-sm-2" type="text" placeholder="Search" />
-                    </form>
+                <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div className="navbar-nav ms-auto">
+                        <a className="nav-link active" aria-current="page" href="#">Home</a>
+                        <a className="nav-link" href="#">About Us</a>
+                        <a className="nav-link" href="#">Blogs</a>
+                        <a className="nav-link" href="#">CTFs</a>
+                    </div>
                 </div>
             </nav>
         </div>

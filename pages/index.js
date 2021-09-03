@@ -1,26 +1,35 @@
-import { Component } from "react"
 import Header from '../components/Header.js'
 import Jumbotron from '../components/Jumbotron'
-import PostCards from '../components/Postcards'
-import getFiveNewestPosts from "../api/getFiveNewestPosts.js"
 import Postcards from "../components/Postcards"
-export default class extends Component {
-    static async getInitialProps() {
-        const apiResult = await getFiveNewestPosts()
+import NewHeader from "../components/newHeader"
 
-        return {
-            posts: apiResult && apiResult.posts
-        }
-    }
-    render() {
-        return (
-            <div className="layout-wrapper">
+export default function Component() {
+
+    return (
+        <>
+            <div
+                className="container-fluid mb-3"
+                style={
+                    {
+                        backgroundImage: "url(/images/layered-steps-haikei.svg)",
+                        // backgroundImage: "url(/images/blob-scene-haikei.svg)",
+                        backgroundRepeat: "no-repeat",
+                        backgroundSize: "cover",
+                        height: "80vh",
+                        backgroundPosition: "center",
+                    }
+                }
+            >
                 <Header />
-                <div className="ht-main">
-                    <Jumbotron />
-                    <Postcards {...this.props} />
-                </div>
+                <Jumbotron />
             </div>
-        )
-    }
+            <div className="container position-relative"
+                style={{
+                    top: "-150px"
+                }}>
+                <Postcards />
+            </div>
+        </>
+    )
+
 }

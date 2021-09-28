@@ -1,32 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&family=Raleway:wght@300;700&display=swap');
 
 .raleway {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
 }
 
 .raleway-thin {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 300;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
 }
 
 .montserrat-800 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 800;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
 }
 
 .montserrat-900 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
 }
 
-
 .btn-accent {
-  background-color: var(--accent-color);
-  color: var(--light-color);
+    background-color: var(--accent-color);
+    color: var(--light-color);
 }
 
 .btn-accent:hover {
-  background-color: var(--fore-color);
-  color: var(--light-color);
+    background-color: var(--fore-color);
+    color: var(--light-color);
+}
+
+.light-color-links {
+    color: var(--light-color) !important;
+}
+.light-color-links:hover {
+    color: var(--fore-color) !important;
 }

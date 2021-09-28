@@ -5,15 +5,15 @@
     --accent-color: #1a237e;
 }
 
-.bg-light-color{
+.bg-light-color {
     background-color: var(--light-color);
 }
 
-.bg-fore-color{
+.bg-fore-color {
     background-color: var(--fore-color);
 }
 
-.bg-accent-color{
+.bg-accent-color {
     background-color: var(--accent-color);
 }
 

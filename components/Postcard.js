@@ -4,8 +4,6 @@ import ThumbnailImg from './thumbnail'
 import Link from 'next/link'
 
 const PostCard = ({ title, imgLink, content, tags }) => {
-    // imgLink = "https://www.esilo.com/wp-content/uploads/media-library/hooded-hacker-on-comupter-digital-brain-potential-blog-post-e1573366318920.jpg";
-
     return (
         <>
             <div className="col mb-4 raleway">
@@ -42,9 +40,6 @@ const PostCard = ({ title, imgLink, content, tags }) => {
             </div>
 
             <style>{`
-                .round {
-                    border-radius: 15px;
-                }
                 .margin-bottom-30 {
                     margin-bottom: 30px;
                 }

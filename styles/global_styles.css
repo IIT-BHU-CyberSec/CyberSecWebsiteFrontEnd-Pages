@@ -36,3 +36,21 @@
 .light-color-links:hover {
     color: var(--fore-color) !important;
 }
+
+.accent-color-link {
+    color: var(--accent-color) !important;
+}
+.accent-color-link:hover {
+    color: var(--fore-color) !important;
+}
+
+.round {
+    border-radius: 15px;
+}
+
+@media only screen and (min-width: 576px) {
+    .px-sm-6 {
+        margin-left: 6rem !important;
+        margin-right: 6rem !important;
+    }
+}

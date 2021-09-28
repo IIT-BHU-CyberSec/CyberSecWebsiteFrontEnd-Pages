@@ -5,7 +5,7 @@ import Link from 'next/link'
 const Navbar = () => {
     return (
         <div className="row bg-accent-color">
-            <nav className="align-items-start col navbar navbar-expand-lg bg-transparent montserrat-800">
+            <nav className="align-items-start col navbar navbar-expand-lg bg-transparent raleway-thin">
                 <button
                     className="navbar-toggler"
                     type="button"

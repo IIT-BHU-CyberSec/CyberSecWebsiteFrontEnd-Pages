@@ -26,14 +26,14 @@ const PostCard = ({ title, imgLink, content, tags }) => {
                         </ul>
                         <div className="margin-bottom-30">{title}</div>
                         <div className="text-end mt-auto bottom-0 position-absolute raleway-thin">
-                            <Link href={`blog/${content}`}>
-                                <a
-                                    href={`blog/${content}`}
-                                    className="btn btn-accent btn-shadow text-mono"
-                                >
-                                    Read Now
-                                </a>
-                            </Link>
+
+                            <a
+                                href={`blog/${content}`}
+                                className="btn btn-accent btn-shadow text-mono"
+                            >
+                                Read Now
+                            </a>
+
                         </div>
                     </div>
                 </div>

@@ -8,7 +8,7 @@ export default class extends Component {
         const apiResult = await getAllBlogPosts()
 
         return {
-            posts: apiResult && apiResult.posts,
+            blogs: apiResult && apiResult.posts,
         }
     }
     render() {

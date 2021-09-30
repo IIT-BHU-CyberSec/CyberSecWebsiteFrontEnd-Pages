@@ -24,39 +24,39 @@ const Navbar = () => {
                     id="navbarNavAltMarkup"
                 >
                     <div className="navbar-nav mx-auto">
-                        <Link href="/">
-                            <a
-                                className="nav-link active light-color-links mx-2"
-                                aria-current="page"
-                                href="/"
-                            >
-                                Home
-                            </a>
-                        </Link>
-                        <Link href="/about">
-                            <a
-                                className="nav-link light-color-links mx-2"
-                                href="#"
-                            >
-                                About Us
-                            </a>
-                        </Link>
-                        <Link href="/blogs">
-                            <a
-                                className="nav-link light-color-links mx-2"
-                                href="#"
-                            >
-                                Blogs
-                            </a>
-                        </Link>
-                        <Link href="/ctf">
-                            <a
-                                className="nav-link light-color-links mx-2"
-                                href="#"
-                            >
-                                CTFs
-                            </a>
-                        </Link>
+
+                        <a
+                            className="nav-link active light-color-links mx-2"
+                            aria-current="page"
+                            href="/"
+                        >
+                            Home
+                        </a>
+
+
+                        <a
+                            className="nav-link light-color-links mx-2"
+                            href="/about"
+                        >
+                            About Us
+                        </a>
+
+
+                        <a
+                            className="nav-link light-color-links mx-2"
+                            href="/blog"
+                        >
+                            Blogs
+                        </a>
+
+
+                        <a
+                            className="nav-link light-color-links mx-2"
+                            href="/ctf"
+                        >
+                            CTFs
+                        </a>
+
                     </div>
                 </div>
             </nav>

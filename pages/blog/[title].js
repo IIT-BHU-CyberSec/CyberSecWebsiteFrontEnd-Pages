@@ -1,14 +1,11 @@
-import { Component, useEffect, useState } from 'react'
-import Prism from 'prismjs'
 import moment from 'moment'
+import Head from 'next/head'
 import 'prismjs/plugins/line-numbers/prism-line-numbers.js'
 import 'prismjs/plugins/normalize-whitespace/prism-normalize-whitespace.js'
-import getBlogPostByUrlTitle from '../../api/getBlogPostByUrlTitle.js'
-import Header from '../../components/Header.js'
-import { useRouter } from 'next/router'
-import ThumbnailImg from '../../components/thumbnail'
+import { Component } from 'react'
 import { AiFillTag } from 'react-icons/ai'
-import Head from 'next/head'
+import getBlogPostByUrlTitle from '../../api/getBlogPostByUrlTitle.js'
+import ThumbnailImg from '../../components/thumbnail'
 
 export default class extends Component {
     static async getInitialProps({ query }) {
@@ -18,17 +15,7 @@ export default class extends Component {
             post: apiResult && apiResult.post,
         }
     }
-    // const [post, setPost] = useState(null)
-    // const router = useRouter()
 
-    // const { title } = router.query
-    // useEffect(() => {
-    //     title &&
-    //         getBlogPostByUrlTitle(title).then((data) => {
-    //             console.log(data.post)
-    //             setPost(() => data.post)
-    //         })
-    // }, [title])
     render() {
         return (
             <>
@@ -37,9 +24,6 @@ export default class extends Component {
                         {this.props.post && this.props.post.seoTitleTag}
                     </title>
                 </Head>
-                <div className="container-fluid">
-                    <Header />
-                </div>
                 <div className="container">
                     <div className="row">
                         {this.props.post && (

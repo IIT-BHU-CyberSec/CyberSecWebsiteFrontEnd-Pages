@@ -1,6 +1,5 @@
 import { Component } from 'react'
 import getAllBlogPosts from '../../api/getAllBlogPosts.js'
-import Header from '../../components/Header.js'
 import PostCards from '../../components/Postcards.js'
 
 export default class extends Component {
@@ -48,9 +47,7 @@ export default class extends Component {
     render() {
         return (
             <>
-                <div className="container-fluid mb-3">
-                    <Header />
-                </div>
+                OO
                 <div className="container">
                     <div className="row mb-4">
                         <div className="col-md-6 col-6 mx-auto">

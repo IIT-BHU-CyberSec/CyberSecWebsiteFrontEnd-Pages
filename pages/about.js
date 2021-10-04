@@ -1,8 +1,5 @@
-import { Component } from 'react'
-
-import Header from '../components/Header.js'
-import { MemberCard } from '../components/team'
 import Head from 'next/head'
+import { MemberCard } from '../components/team'
 
 const Team = [
     {
@@ -18,12 +15,9 @@ const Team = [
 export default function About() {
     return (
         <>
-            <div className="container-fluid">
-                <Head>
-                    <title>About</title>
-                </Head>
-                <Header />
-            </div>
+            <Head>
+                <title>About</title>
+            </Head>
             <div className="container mt-3">
                 <div className="row text-center mb-5">
                     <div className="col-12">

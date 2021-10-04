@@ -38,6 +38,7 @@
 }
 
 .accent-color-link {
+    cursor: pointer;
     color: var(--accent-color) !important;
 }
 .accent-color-link:hover {

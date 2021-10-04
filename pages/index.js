@@ -9,7 +9,7 @@ export default class extends Component {
         const apiResult = await getFiveNewestPosts()
 
         return {
-            blogs: apiResult && apiResult.posts
+            blogs: apiResult && apiResult.posts,
         }
     }
     render() {

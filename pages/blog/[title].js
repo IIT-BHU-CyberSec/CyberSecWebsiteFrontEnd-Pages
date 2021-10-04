@@ -15,7 +15,7 @@ export default class extends Component {
         const apiResult = await getBlogPostByUrlTitle(query.title)
 
         return {
-            post: apiResult && apiResult.post
+            post: apiResult && apiResult.post,
         }
     }
     // const [post, setPost] = useState(null)
@@ -33,7 +33,9 @@ export default class extends Component {
         return (
             <>
                 <Head>
-                    <title>{this.props.post && this.props.post.seoTitleTag}</title>
+                    <title>
+                        {this.props.post && this.props.post.seoTitleTag}
+                    </title>
                 </Head>
                 <div className="container-fluid">
                     <Header />
@@ -49,20 +51,24 @@ export default class extends Component {
                                         maxHeight="200px"
                                     />
                                 </div>
-                                <h1 className="display-3">{this.props.post.title}</h1>
+                                <h1 className="display-3">
+                                    {this.props.post.title}
+                                </h1>
                                 <div className="blog-post-container">
                                     <ul className="list-inline text-muted">
                                         <li className="list-inline-item tag">
                                             <AiFillTag></AiFillTag>
                                         </li>
-                                        {this.props.post.tags.map((val, idx) => (
-                                            <li
-                                                className="list-inline-item tag"
-                                                key={idx}
-                                            >
-                                                {val}
-                                            </li>
-                                        ))}
+                                        {this.props.post.tags.map(
+                                            (val, idx) => (
+                                                <li
+                                                    className="list-inline-item tag"
+                                                    key={idx}
+                                                >
+                                                    {val}
+                                                </li>
+                                            )
+                                        )}
                                     </ul>
                                     <div className="text-muted mb-3">
                                         {moment
@@ -71,7 +77,8 @@ export default class extends Component {
                                     </div>
                                     <div
                                         dangerouslySetInnerHTML={{
-                                            __html: this.props.post.markdownContent,
+                                            __html: this.props.post
+                                                .markdownContent,
                                         }}
                                         className="blog-post-body-content"
                                     ></div>

@@ -1,5 +1,4 @@
 import { Component } from 'react'
-import getFiveNewestPosts from '../api/getFiveNewestPosts.js'
 import PostCard from './Postcard'
 
 export default class extends Component {

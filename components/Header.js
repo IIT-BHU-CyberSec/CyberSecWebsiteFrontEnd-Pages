@@ -2,7 +2,7 @@ import React from 'react'
 import { BiMenuAltLeft } from 'react-icons/bi'
 import Link from 'next/link'
 
-const Navbar = () => {
+export default function Navbar() {
     return (
         <div className="row bg-accent-color">
             <nav className="align-items-start col navbar navbar-expand-lg bg-transparent raleway-thin">
@@ -24,7 +24,6 @@ const Navbar = () => {
                     id="navbarNavAltMarkup"
                 >
                     <div className="navbar-nav mx-auto">
-
                         <a
                             className="nav-link active light-color-links mx-2"
                             aria-current="page"
@@ -33,14 +32,12 @@ const Navbar = () => {
                             Home
                         </a>
 
-
                         <a
                             className="nav-link light-color-links mx-2"
                             href="/about"
                         >
                             About Us
                         </a>
-
 
                         <a
                             className="nav-link light-color-links mx-2"
@@ -49,14 +46,12 @@ const Navbar = () => {
                             Blogs
                         </a>
 
-
                         <a
                             className="nav-link light-color-links mx-2"
                             href="/ctf"
                         >
                             CTFs
                         </a>
-
                     </div>
                 </div>
             </nav>
@@ -70,5 +65,3 @@ const Navbar = () => {
         </div>
     )
 }
-
-export default Navbar

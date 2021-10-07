@@ -10,7 +10,7 @@ export default function Ctf() {
                 </li>
                 <li>
                     <a href="https://github.com/IIT-BHU-CyberSec/Technex-CTF-2021">
-                        Techfest '21
+                        Technex '21
                     </a>
                 </li>
                 <li>

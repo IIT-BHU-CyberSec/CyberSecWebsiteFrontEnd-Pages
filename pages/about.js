@@ -1,16 +1,6 @@
 import Head from 'next/head'
 import { MemberCard } from '../components/team'
-
-const Team = [
-    {
-        name: 'Name',
-        profileImg: 'https://copsiitbhu.co.in/static/assets/img/logo.svg',
-        github: 'https://github.com',
-        email: 'mailto:xx@email.com',
-        twitter: 'https://twitter.com',
-        linkedin: 'https://linkedin.com',
-    },
-]
+import Team from '../utils/members'
 
 export default function About() {
     return (

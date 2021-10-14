@@ -15,4 +15,4 @@
 
 1. The production website is running at https://iitbhucybersec.netlify.app/
 2. Any commits to master branch of this remote repo will reflect on this site in a couple of minutes
-3. The `PRODUCTION_API_URL` by default is set to https://iitbhucybersecweb-frontendapi.herokuapp.com where the frontend API is running.
+3. The `PRODUCTION_API_URL` by default is set to https://api-iitbhucybersec-main.herokuapp.com/ where the frontend API is running.

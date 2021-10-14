@@ -1,26 +1,24 @@
-import { Component } from "react"
-import Header from '../components/Header.js'
 import Jumbotron from '../components/Jumbotron'
-import PostCards from '../components/Postcards'
-import getFiveNewestPosts from "../api/getFiveNewestPosts.js"
-import Postcards from "../components/Postcards"
+import Postcards from '../components/Postcards'
+import { Component } from 'react'
+import getFiveNewestPosts from '../api/getFiveNewestPosts.js'
+
 export default class extends Component {
     static async getInitialProps() {
         const apiResult = await getFiveNewestPosts()
 
         return {
-            posts: apiResult && apiResult.posts
+            blogs: apiResult && apiResult.posts,
         }
     }
     render() {
         return (
-            <div className="layout-wrapper">
-                <Header />
-                <div className="ht-main">
-                    <Jumbotron />
+            <>
+                <Jumbotron />
+                <div className="container position-relative">
                     <Postcards {...this.props} />
                 </div>
-            </div>
+            </>
         )
     }
 }

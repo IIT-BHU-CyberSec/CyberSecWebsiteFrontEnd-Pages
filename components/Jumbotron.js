@@ -1,34 +1,27 @@
 import React from 'react'
+import { AiOutlineDownCircle } from 'react-icons/ai'
 
 const Jumbotron = () => {
     return (
         <>
-            <div id="ht-tm-jumbotron">
-                <div className="jumbotron bg-transparent mb-0 radius-0">
-                    <div className="container">
-                        <div className="ht-tm-header">
-                            <div className="row">
-                                <div className="col-xl-6">
-                                    <h1 className="display-2">IIT(BHU)CyberSe<span className="vim-caret">c</span></h1>
-                                    <div className="lead mb-3 text-mono text-success">A Bootstrap theme for 1337 hackers.</div>
-
-                                    <p className="mt-5 text-grey text-spacey">
-                                        Neon Glow is a free and open source Bootstrap theme.
-                                        It was built on top of the Bootstrap 4.
-                                        Only the leetest of hackers will be able to wield its power.
-                                        Scroll down to explore the components and dive into the source.
-                                    </p>
-
-                                    <div className="text-mono">
-                                        <a href="/bootstrap-themes/demo/files/hackerthemes-neon-glow.zip" className="btn btn-primary btn-shadow px-3 my-2 ml-0 text-left js-ht-download-link" data-type="theme" data-id="95">Download</a>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
+            <div className="container montserrat-900">
+                <div className="row">
+                    <div className="col-12 py-5">
+                        <h1 className="display-3 text-center">
+                            IIT(BHU)CyberSec
+                        </h1>
+                        <p className="accent-color text-center display-6">
+                            Academic CTF team of IIT(BHU), Varanasi
+                        </p>
                     </div>
                 </div>
-
+                <div className="row">
+                    <div className="col-12 text-center my-5 accent-color">
+                        Read out latest blogs
+                        <br />
+                        <AiOutlineDownCircle size={60} />
+                    </div>
+                </div>
             </div>
         </>
     )

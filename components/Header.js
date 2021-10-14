@@ -1,39 +1,67 @@
 import React from 'react'
-const Navbar = () => {
-    return (
-        <div>
-            <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
-                <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-                    data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
-                </button>
-                <a className="navbar-brand" href="/">IIT(BHU)CyberSec</a>
+import { BiMenuAltLeft } from 'react-icons/bi'
+import Link from 'next/link'
 
-                <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
-                    <ul className="navbar-nav mr-auto mt-2 mt-md-0">
-                        <li className="nav-item active">
-                            <a className="nav-link" href="/">Home
-                                <span className="sr-only">(current)</span>
-                            </a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href='/about'>About Us</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="/blog">Blogs</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="/contact">Contact Us</a>
-                        </li>
-                    </ul>
-                    <form className="form-inline my-2 my-lg-0">
-                        <input className="form-control mr-sm-2" type="text" placeholder="Search" />
-                    </form>
+export default function Navbar() {
+    return (
+        <div className="row bg-accent-color">
+            <nav className="align-items-start col navbar navbar-expand-lg bg-transparent raleway-thin">
+                <button
+                    className="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span className="navbar-toggler-icon">
+                        <BiMenuAltLeft size={40} className="light-color" />
+                    </span>
+                </button>
+                <div
+                    className="align-items-start collapse navbar-collapse"
+                    id="navbarNavAltMarkup"
+                >
+                    <div className="navbar-nav mx-auto">
+                        <a
+                            className="nav-link active light-color-links mx-2"
+                            aria-current="page"
+                            href="/"
+                        >
+                            Home
+                        </a>
+
+                        <a
+                            className="nav-link light-color-links mx-2"
+                            href="/about"
+                        >
+                            About Us
+                        </a>
+
+                        <a
+                            className="nav-link light-color-links mx-2"
+                            href="/blog"
+                        >
+                            Blogs
+                        </a>
+
+                        <a
+                            className="nav-link light-color-links mx-2"
+                            href="/ctf"
+                        >
+                            CTFs
+                        </a>
+                    </div>
                 </div>
             </nav>
+            <style>
+                {`
+                .nav-link {
+                    font-size: 1.5em
+                }
+                `}
+            </style>
         </div>
     )
 }
-
-export default Navbar

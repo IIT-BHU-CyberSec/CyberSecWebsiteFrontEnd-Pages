@@ -1,4 +1,5 @@
 import moment from 'moment'
+import Prism from 'prismjs'
 import Head from 'next/head'
 import 'prismjs/plugins/line-numbers/prism-line-numbers.js'
 import 'prismjs/plugins/normalize-whitespace/prism-normalize-whitespace.js'
@@ -15,7 +16,9 @@ export default class extends Component {
             post: apiResult && apiResult.post,
         }
     }
-
+    componentDidMount() {
+        Prism.highlightAll()
+    }
     render() {
         return (
             <>

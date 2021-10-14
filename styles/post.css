@@ -1,6 +1,5 @@
 .blog-post-container {
   min-height: calc(100vh - (85px + 100px));
-  margin-top: 80px;
   margin-bottom: 40px;
 }
 

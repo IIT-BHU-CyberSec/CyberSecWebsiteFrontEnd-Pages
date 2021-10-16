@@ -1,3 +1,8 @@
+.emoji-img {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-bottom: 0;
+}
 .blog-post-container {
   min-height: calc(100vh - (85px + 100px));
   margin-bottom: 40px;
@@ -154,7 +159,6 @@
 .blog-post-body-content img {
   max-width: 100%;
   height: auto;
-  margin-bottom: 18px;
 }
 
 .blog-post-body-content blockquote {

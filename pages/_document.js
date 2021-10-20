@@ -16,7 +16,7 @@ class MyDocument extends Document {
                         crossOrigin="anonymous"
                     ></script>
                 </Head>
-                <body className="bg-light-color fore-color raleway">
+                <body className="bg-light-color fore-color">
                     <Main />
                     <NextScript />
                 </body>

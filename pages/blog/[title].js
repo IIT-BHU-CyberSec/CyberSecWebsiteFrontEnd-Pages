@@ -4,6 +4,7 @@ import Head from 'next/head'
 import 'prismjs/plugins/line-numbers/prism-line-numbers.js'
 import 'prismjs/plugins/normalize-whitespace/prism-normalize-whitespace.js'
 require('prismjs/components/prism-c');
+require('prismjs/components/prism-python');
 import { Component } from 'react'
 import { AiFillTag } from 'react-icons/ai'
 import getBlogPostByUrlTitle from '../../api/getBlogPostByUrlTitle.js'

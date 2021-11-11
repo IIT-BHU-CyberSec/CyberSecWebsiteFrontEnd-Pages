@@ -19,7 +19,7 @@ const Team = [
         "name": "Gandharv Jain",
         "profileImg": "https://copsiitbhu.co.in/static/assets/img/logo.svg",
         "github": "https://github.com/GandharvJain",
-        "email": "mailto:jaingandharv01@email.com"
+        "email": "mailto:jaingandharv01@email.com",
         "linkedin": "https://www.linkedin.com/in/gandharv-jain-a6b71420b/"
     }
 ]

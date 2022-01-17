@@ -1,7 +1,10 @@
 import moment from 'moment'
+import Prism from 'prismjs'
 import Head from 'next/head'
 import 'prismjs/plugins/line-numbers/prism-line-numbers.js'
 import 'prismjs/plugins/normalize-whitespace/prism-normalize-whitespace.js'
+require('prismjs/components/prism-c');
+require('prismjs/components/prism-python');
 import { Component } from 'react'
 import { AiFillTag } from 'react-icons/ai'
 import getBlogPostByUrlTitle from '../../api/getBlogPostByUrlTitle.js'
@@ -15,7 +18,9 @@ export default class extends Component {
             post: apiResult && apiResult.post,
         }
     }
-
+    componentDidMount() {
+        Prism.highlightAll()
+    }
     render() {
         return (
             <>
@@ -27,7 +32,7 @@ export default class extends Component {
                 <div className="container">
                     <div className="row">
                         {this.props.post && (
-                            <div className="col-12 raleway">
+                            <div >
                                 <div className="my-4">
                                     <ThumbnailImg
                                         src={this.props.post.thumbnailImageUrl}

@@ -47,7 +47,6 @@ export default class extends Component {
     render() {
         return (
             <>
-                OO
                 <div className="container">
                     <div className="row mb-4">
                         <div className="col-md-6 col-6 mx-auto">
